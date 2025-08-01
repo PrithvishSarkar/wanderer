@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Math&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:opsz@18..144&display=swap');
+
+.libertinus-math-auth-header {
+  font-family: "Libertinus Math", sans-serif;
+}
+
+.special-elite-auth-welcome {
+  font-family: "Special Elite", sans-serif;
+}
+
+.background-image-auth-blogapp {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, red, pink);
+}
+
+.background-image-navbar-brand,
+.background-image-navbar-brand:hover {
+  background-image: linear-gradient(to right, red, pink);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.landing-page-container {
+  height: calc(100vh - 91px);
+  overflow: hidden;
+}
+
+.landing-page-main>p[role="title-text"] {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-block: 1.5rem;
+  color: transparent;
+  background-image: linear-gradient(to right, #22d3ee, #bae6fd);
+  background-clip: text;
+}
+
+.landing-page-main>p[role="description-text"] {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.4);
+  margin-block: 1.5rem;
+}
+
+.add-blog-container {
+  height: calc(100vh - 91px);
+  overflow: auto;
+}
+
+.add-blog-container>p[role="title-text"] {
+  font-size: 2.5rem;
+  font-family: "Playwrite AU QLD", sans-serif;
+  line-height: 1;
+  margin-top: 2rem;
+  color: transparent;
+  background-image: linear-gradient(to right, #f59e0b, #fde68a, #f59e0b);
+  background-clip: text;
+}
+
+.add-blog-container>p[role="description-text"] {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #6ee7b7;
+}
+
+.not-found-main-container {
+  height: calc(100vh - 59px);
+  max-width: 100vw;
+  background-image: url("/public/not-found.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.not-found-main-container>header {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.not-found-main-container>p[role="title-text"] {
+  font-size: 3rem;
+  font-family: "rye", "sans-serif";
+}
+
+.not-found-main-container>p[role="description-text"] {
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1;
+}
+
+.not-found-link {
+  align-self: center;
+}
+
+.blog-content-title {
+  font-size: 2rem;
+  font-family: "Playwrite HU", "sans-serif";
+  font-weight: 400;
+}
+
+.blog-content-description {
+  font-size: 1.125rem;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.2;
+  font-weight: 400;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.blog-cards-container, .single-blog-container {
+  height: calc(100vh - 91px);
+}
+
+@media (min-width: 1024px) {
+  .landing-page-main>p[role="title-text"] {
+    font-size: 4rem;
+    line-height: 1;
+    margin-block: 3rem;
+    padding-block: 0.5rem;
+  }
+
+  .landing-page-main>p[role="description-text"] {
+    font-size: 2rem;
+    line-height: 1;
+    margin-block: 3rem;
+    max-width: 90%;
+  }
+
+  .landing-page-container {
+    height: calc(100vh - 103px);
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .landing-page-container>section {
+    height: 100%;
+    max-width: 30%;
+  }
+
+  .add-blog-container {
+    height: calc(100vh - 103px);
+  }
+
+  .add-blog-container>p[role="title-text"] {
+    font-size: 3.5rem;
+  }
+
+  .add-blog-container>p[role="description-text"] {
+    font-size: 1.75rem;
+  }
+
+  .not-found-main-container {
+    height: calc(100vh - 70px);
+    background-origin: border-box;
+    background-position: center center;
+    text-align: left;
+    padding-left: 2rem;
+  }
+
+  .not-found-main-container>header {
+    font-size: 2rem;
+  }
+
+  .not-found-main-container>p[role="title-text"] {
+    font-size: 4rem;
+  }
+
+  .not-found-main-container>p[role="description-text"] {
+    font-size: 1.5rem;
+    max-width: 40%;
+  }
+
+  .not-found-link {
+    align-self: flex-start;
+  }
+
+  .blog-cards-container, .single-blog-container {
+    height: calc(100vh - 103px);
+  }
+}
