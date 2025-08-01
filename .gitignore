@@ -1,3 +1,11 @@
+Frontend/.env
+Frontend/.env.production
+Frontend/.env.development
+
+Backend/.env
+Backend/.env.production
+Backend/.env.development
+
 # Logs
 logs
 *.log
@@ -22,8 +30,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-# Dotenv Files
-.env
-.env.development
-.env.production
