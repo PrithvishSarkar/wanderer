@@ -4,7 +4,7 @@ import cors from "cors";
 import helmet from "helmet";
 import cookieParser from "cookie-parser";
 import dotenv from "dotenv";
-dotenv.config({ path: "./.env" });
+dotenv.config({ path: ["./.env", "./.env.development", "./.env.production"] });
 import authRoutes from "./routes/authRoutes.js";
 import blogRoutes from "./routes/blogRoutes.js";
 import connectDb from "./dbConnect.js";
@@ -20,6 +20,7 @@ const app = express();
 app.use(express.text());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+console.log(process.env.FRONTEND_HOSTNAME);
 app.use(
   cors({
     origin: process.env.FRONTEND_HOSTNAME, // allows only my frontend
@@ -37,7 +38,7 @@ app.use("/api", blogRoutes);
 // Testing Backend Working Status
 app.get("/", (_, res) => {
   res.status(200).json({ status: "success", message: "Backend Working" });
-})
+});
 
 app.listen(PORT, () => {
   console.info(`Listening to URL http://localhost:${PORT}`);
