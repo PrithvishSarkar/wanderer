@@ -1,10 +1,6 @@
-Frontend/.env
-Frontend/.env.production
-Frontend/.env.development
-
-Backend/.env
-Backend/.env.production
-Backend/.env.development
+.env
+.env.production
+.env.development
 
 # Logs
 logs
