@@ -41,9 +41,13 @@ const loginController = async (req, res) => {
         expiresIn: 7 * 24 * 3600 * 1000,
       }
     );
+
+    const isProduction = process.env.NODE_ENV === "production";
     res.cookie("blog_token", token, {
       httpOnly: true,
       maxAge: 7 * 24 * 3600 * 1000,
+      secure: isProduction,
+      sameSite: isProduction ? "none" : "Lax",
     });
 
     // Sending appropriate response to Frontend

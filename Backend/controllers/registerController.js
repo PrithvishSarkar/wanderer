@@ -49,9 +49,12 @@ const registerController = async (req, res) => {
     The JWT Secret Key must be of 32 bytes (256 bits) for HS256 algorithm (default algo).
     */
 
+    const isProduction = process.env.NODE_ENV === "production";
     res.cookie("blog_token", token, {
       maxAge: 7 * 24 * 3600 * 1000,
       httpOnly: true,
+      secure: isProduction,
+      sameSite: isProduction ? "none" : "Lax",
     });
 
     // Sending appropriate response to Frontend including 'user data'

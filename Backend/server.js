@@ -13,7 +13,7 @@ import connectDb from "./dbConnect.js";
 // Database Connection
 connectDb();
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 4000;
 const app = express();
 
 /* Application Level Middleware Group Starts Here */
