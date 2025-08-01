@@ -1,0 +1,9 @@
+services:
+  - type: static
+    name: https://wanderer-frontend.onrender.com
+    rootDir: Frontend
+    buildCommand: npm run build
+    staticRootDir: dist
+    rewrites:
+      - from: "/*"
+        to: "/index.html"
