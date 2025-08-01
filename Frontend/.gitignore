@@ -24,5 +24,6 @@ dist-ssr
 *.sw?
 
 # Dotenv Files
+.env
 .env.development
 .env.production
