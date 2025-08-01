@@ -1,8 +1,0 @@
-services:
-  - type: static
-    name: wanderer-frontend
-    buildCommand: npm run build
-    staticRootDir: dist
-    rewrites:
-      - from: "/*"
-        to: "/index.html"
