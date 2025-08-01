@@ -41,5 +41,5 @@ app.get("/", (_, res) => {
 });
 
 app.listen(PORT, () => {
-  console.info(`Listening to URL http://localhost:${PORT}`);
+  console.info(`Listening to URL ${process.env.BACKEND_URL}:${PORT}`);
 });
