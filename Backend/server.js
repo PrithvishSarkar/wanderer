@@ -22,7 +22,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: process.env.DEVELOPMENT_FRONTEND_HOSTNAME, // allows only my frontend
+    origin: process.env.FRONTEND_HOSTNAME, // allows only my frontend
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"], // restricts allowed methods
     credentials: true, // allows cookies and authorization headers
     allowedHeaders: ["Content-Type", "Authorization"], // restricts allowed headers
